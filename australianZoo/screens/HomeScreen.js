@@ -233,7 +233,7 @@ const HomeScreen = ({ navigation }) => {
                                         onPress={() => {
                                             ImagePicer();
                                         }}
-                                        style={{ height: 100, width: 100, borderWidth: 1, borderRadius: 10, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+                                        style={{ height: 100, width: 100, borderWidth: 1, borderRadius: 50, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
                                     >
                                          <Text style={{ color: '#fe6233', fontWeight: 'bold' }}>ADD AN ANIMAL PHOTO</Text>
                                         
@@ -250,7 +250,7 @@ const HomeScreen = ({ navigation }) => {
                             onPress={() => {
                                 addZoo();
                             }}
-                            style={{ position: 'absolute', bottom: 10, right: 10, height: 100, width: 100, borderWidth: 1, borderRadius: 10, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+                            style={{ position: 'absolute', bottom: 10, right: 10, height: 100, width: 100, borderWidth: 1, borderRadius: 50, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
                         >
                            <Entypo name='check' style={{color: '#fe6233',fontSize: 50}} />
                         </TouchableOpacity>
@@ -258,7 +258,7 @@ const HomeScreen = ({ navigation }) => {
 
                         <TouchableOpacity
                             onPress={() => { setIsVisible(false) }}
-                            style={{ position: 'absolute', right: 10, top: 40,height: 40, width: 40, borderWidth: 2, borderRadius: 10, borderColor: '#fe6233',alignItems: 'center', justifyContent: 'center',backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
+                            style={{ position: 'absolute', right: 10, top: 40,height: 40, width: 40, borderWidth: 2, borderRadius: 50, borderColor: '#fe6233',alignItems: 'center', justifyContent: 'center',backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
                             <Text style={{ color: '#fe6233',fontSize: 30 }}>X</Text>
                         </TouchableOpacity>
                         
@@ -268,9 +268,9 @@ const HomeScreen = ({ navigation }) => {
 
                 <TouchableOpacity
                     onPress={() => { setIsVisible(true) }}
-                    style={{ position: 'absolute', top: 20, right: 10 }}
+                    style={{ position: 'absolute', top: 30, right: 20 , borderWidth: 2, borderColor: '#fe6233', borderRadius: 50, width: 40, height: 40, alignItems: 'center', justifyContent: 'center'}}
                 >
-                    <Text style={{ color: '#fe6233', fontSize: 45 }}>+</Text>
+                    <Text style={{ color: '#fe6233', fontSize: 30, fontWeight: 'bold' }}>+</Text>
                 </TouchableOpacity>
          
             </ImageBackground>

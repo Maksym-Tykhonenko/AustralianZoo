@@ -356,14 +356,14 @@ const ProfileScreen = () => {
                   {/**BTN SAVE */}
                   <TouchableOpacity
                     onPress={() => handleAddPostList()}
-                    style={{ marginRight: 10, marginTop: 10, shadowOffset: { width: 3, height: 4 }, shadowOpacity: 0.8, elevation: 9, height: 40, width: 80, borderWidth: 1, borderColor: '#fe6233', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: 10, alignItems: 'center', justifyContent: 'center', }}>
+                    style={{ marginRight: 10, marginTop: 10, shadowOffset: { width: 3, height: 4 }, shadowOpacity: 0.8, elevation: 9, height: 40, width: 80, borderWidth: 1, borderColor: '#fe6233', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: 30, alignItems: 'center', justifyContent: 'center', }}>
                     <Text style={{ fontWeight: 'bold' }}>SAVE</Text>
                   </TouchableOpacity>
 
                   {/**BTN CLOSE MODAL*/}
                   <TouchableOpacity
                     onPress={() => handleCloseModal()}
-                    style={{ position: 'absolute', right: -10, top: -10, marginRight: 10, marginTop: 10, shadowOffset: { width: 3, height: 4 }, shadowOpacity: 0.8, elevation: 9, height: 40, width: 40, borderWidth: 1, borderColor: '#fe6233', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: 10, alignItems: 'center', justifyContent: 'center', }}>
+                    style={{ position: 'absolute', right: -10, top: -10, marginRight: 10, marginTop: 10, shadowOffset: { width: 3, height: 4 }, shadowOpacity: 0.8, elevation: 9, height: 40, width: 40, borderWidth: 2, borderColor: '#fe6233', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: 50, alignItems: 'center', justifyContent: 'center', }}>
                     <Text style={{ fontWeight: 'bold' }}>X</Text>
                   </TouchableOpacity>
 
