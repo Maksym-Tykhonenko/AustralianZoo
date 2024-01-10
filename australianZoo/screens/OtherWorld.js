@@ -74,17 +74,17 @@ const OtherWorld = ({ navigation }) => {
          
       <ImageBackground
         style={{ flex: 1, width: '100%' }}
-        source={require('../accets/bgr2.jpeg')}
+        source={require('../accets/backgr.jpg')}
       >
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
           <ScrollView style={{ marginTop: 60 }}>
             {newCounryList && newCounryList.map((item) => {
               return (
                 <TouchableOpacity
-                  style={{ marginBottom: 10, width: 300, height: 40, borderWidth: 2, borderColor: '#fff', borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.1)', }}
+                  style={{ marginBottom: 10, width: 300, height: 40, borderWidth: 2, borderColor: '#fe6233', borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.1)', }}
                   onPress={() => navigation.navigate("OtherWorldDitails", item)}
                   key={uid()}>
-                  <Text style={{ color: '#fff', fontWeight: 'bold', fontSize: 20 }}>{item.country}</Text>
+                  <Text style={{ color: '#fe6233', fontWeight: 'bold', fontSize: 20 }}>{item.country}</Text>
                 </TouchableOpacity>
               )
             })}
@@ -92,10 +92,10 @@ const OtherWorld = ({ navigation }) => {
             {countryList.map((item) => {
               return (
                 <TouchableOpacity
-                  style={{ marginBottom: 10, width: 300, height: 40, borderWidth: 2, borderColor: '#fff', borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.1)', }}
+                  style={{ marginBottom: 10, width: 300, height: 40, borderWidth: 2, borderColor: '#fe6233', borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.1)', }}
                   onPress={() => navigation.navigate("OtherWorldDitails", item)}
                   key={item.id}>
-                  <Text style={{ color: '#fff', fontWeight: 'bold', fontSize: 20 }}>{item.country}</Text>
+                  <Text style={{ color: '#fe6233', fontWeight: 'bold', fontSize: 20 }}>{item.country}</Text>
                 </TouchableOpacity>
               )
             })}
@@ -107,7 +107,7 @@ const OtherWorld = ({ navigation }) => {
           transparent={true}
           visible={isVisible}
         >
-          <View style={{ flex: 1, position: 'relative', backgroundColor: '#123a46', marginHorizontal: 30, marginVertical: 250, borderWidth: 2, borderColor: '#fe6233', borderRadius: 10 }}>
+          <View style={{ flex: 1, position: 'relative', backgroundColor: '#000', marginHorizontal: 30, marginVertical: 250, borderWidth: 2, borderColor: '#fe6233', borderRadius: 10 }}>
             
             <View style={{ marginLeft: 20, marginTop: 10 }}>
 
@@ -136,13 +136,13 @@ const OtherWorld = ({ navigation }) => {
             <TouchableOpacity
               onPress={() => { handleCloseModal() }}
               style={{ position: 'absolute', right: 10, top: 10, height: 40, width: 40, borderWidth: 2, borderRadius: 10, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
-              <Text style={{  fontSize: 30 }}>X</Text>
+              <Text style={{  fontSize: 30, color: '#fe6233' }}>X</Text>
             </TouchableOpacity>
             
             <TouchableOpacity
               onPress={() => { handlAddCountry() }}
               style={{ position: 'absolute', right: 10, bottom: 10, height: 40, width: 40, borderWidth: 2, borderRadius: 10, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
-              <Entypo name='check' style={{  fontSize: 25 }} />
+              <Entypo name='check' style={{  fontSize: 25, color: '#fe6233' }} />
             </TouchableOpacity>
           </View>
 

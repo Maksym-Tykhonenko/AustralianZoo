@@ -131,7 +131,7 @@ const ProfileScreen = () => {
     <View style={{ flex: 1, }}>
       <ImageBackground
         style={{ flex: 1, width: '100%' }}
-        source={require('../accets/bgr2.jpeg')}
+        source={require('../accets/backgr.jpg')}
       >
         <View style={{ flex: 1, marginTop: 35, position: 'relative' }}>
 
@@ -237,7 +237,7 @@ const ProfileScreen = () => {
                 </View>
               ) : (
                 <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' }}>
-                  <Text style={{ fontWeight: 'bold', fontSize: 35, color: '#000' }}>{name}</Text>
+                  <Text style={{ fontWeight: 'bold', fontSize: 35, color: '#fe6233' }}>{name}</Text>
                   
                   <TouchableOpacity
                     onPress={() => setIsVisible(true)}
@@ -293,7 +293,7 @@ const ProfileScreen = () => {
             visible={isVisible}
           >
            
-            <View style={{ flex: 1, paddingTop: 50, paddingBottom: 20, paddingHorizontal: 20, position: 'relative', backgroundColor: '#123a46' }}>
+            <View style={{ flex: 1, paddingTop: 50, paddingBottom: 20, paddingHorizontal: 20, position: 'relative', backgroundColor: '#000' }}>
 
               <ScrollView>
 
@@ -357,14 +357,14 @@ const ProfileScreen = () => {
                   <TouchableOpacity
                     onPress={() => handleAddPostList()}
                     style={{ marginRight: 10, marginTop: 10, shadowOffset: { width: 3, height: 4 }, shadowOpacity: 0.8, elevation: 9, height: 40, width: 80, borderWidth: 1, borderColor: '#fe6233', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: 30, alignItems: 'center', justifyContent: 'center', }}>
-                    <Text style={{ fontWeight: 'bold' }}>SAVE</Text>
+                    <Text style={{ fontWeight: 'bold', color: '#fe6233' }}>SAVE</Text>
                   </TouchableOpacity>
 
                   {/**BTN CLOSE MODAL*/}
                   <TouchableOpacity
                     onPress={() => handleCloseModal()}
                     style={{ position: 'absolute', right: -10, top: -10, marginRight: 10, marginTop: 10, shadowOffset: { width: 3, height: 4 }, shadowOpacity: 0.8, elevation: 9, height: 40, width: 40, borderWidth: 2, borderColor: '#fe6233', backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: 50, alignItems: 'center', justifyContent: 'center', }}>
-                    <Text style={{ fontWeight: 'bold' }}>X</Text>
+                    <Text style={{ fontWeight: 'bold', color: '#fe6233' }}>X</Text>
                   </TouchableOpacity>
 
                 </KeyboardAvoidingView>

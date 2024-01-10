@@ -115,7 +115,7 @@ const OtherWorldDitails = ({ navigation, route }) => {
     <View style={{ flex: 1, }}>
       <ImageBackground
         style={{ flex: 1, width: '100%' }}
-        source={require('../accets/bgr2.jpeg')}
+        source={require('../accets/backgr.jpg')}
       >
         <View style={{ flex: 1, }}>
           
@@ -154,7 +154,7 @@ const OtherWorldDitails = ({ navigation, route }) => {
           visible={isVisible}
         >
 
-          <View style={{ flex: 1, position: 'relative', backgroundColor: '#123a46' }}>
+          <View style={{ flex: 1, position: 'relative', backgroundColor: '#000' }}>
                         
             <ScrollView>
 

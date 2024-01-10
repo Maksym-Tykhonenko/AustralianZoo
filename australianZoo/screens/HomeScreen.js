@@ -99,7 +99,7 @@ const HomeScreen = ({ navigation }) => {
         <View style={{ flex: 1, position: 'relative' }}>
           
             <ImageBackground
-                source={require('../accets/bgr2.jpeg')}
+                source={require('../accets/backgr.jpg')}
                 style={{ flex: 1 }}>
                 <ScrollView style={{ marginHorizontal: 40, marginTop: 50 }}>
               
@@ -145,7 +145,7 @@ const HomeScreen = ({ navigation }) => {
                     visible={isVisible}
                 >
 
-                    <View style={{ flex: 1, position: 'relative', backgroundColor: '#123a46' }}>
+                    <View style={{ flex: 1, position: 'relative', backgroundColor: '#000' }}>
                         
                         <ScrollView>
 
@@ -163,7 +163,7 @@ const HomeScreen = ({ navigation }) => {
                                             shadowOffset: { width: 3, height: 4 },
                                             shadowOpacity: .8,
                                             elevation: 9,
-                                            borderColor: '#fe6233', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
+                                            borderColor: '#fe6233',backgroundColor: 'rgba(255, 255, 255, 0.5)', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
                                         }}
                                     />
 
@@ -177,7 +177,7 @@ const HomeScreen = ({ navigation }) => {
                                             shadowOffset: { width: 3, height: 4 },
                                             shadowOpacity: .8,
                                             elevation: 9,
-                                            borderColor: '#fe6233', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
+                                            borderColor: '#fe6233',backgroundColor: 'rgba(255, 255, 255, 0.5)', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
                                         }}
                                     />
 
@@ -191,7 +191,7 @@ const HomeScreen = ({ navigation }) => {
                                             shadowOffset: { width: 3, height: 4 },
                                             shadowOpacity: .8,
                                             elevation: 9,
-                                            borderColor: '#fe6233', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
+                                            borderColor: '#fe6233',backgroundColor: 'rgba(255, 255, 255, 0.5)', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
                                         }}
                                     />
 
@@ -205,7 +205,7 @@ const HomeScreen = ({ navigation }) => {
                                             shadowOffset: { width: 3, height: 4 },
                                             shadowOpacity: .8,
                                             elevation: 9,
-                                            borderColor: '#fe6233', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
+                                            borderColor: '#fe6233',backgroundColor: 'rgba(255, 255, 255, 0.5)', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
                                         }}
                                     />
 
@@ -219,7 +219,7 @@ const HomeScreen = ({ navigation }) => {
                                             shadowOffset: { width: 3, height: 4 },
                                             shadowOpacity: .8,
                                             elevation: 9,
-                                            borderColor: '#fe6233', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
+                                            borderColor: '#fe6233',backgroundColor: 'rgba(255, 255, 255, 0.5)', marginBottom: 15, paddingLeft: 10, fontSize: 20, borderWidth: 1, borderRadius: 10, color: '#fff', width: 250, height: 40
                                         }}
                                     />
                                 </View>
@@ -233,7 +233,7 @@ const HomeScreen = ({ navigation }) => {
                                         onPress={() => {
                                             ImagePicer();
                                         }}
-                                        style={{ height: 100, width: 100, borderWidth: 1, borderRadius: 50, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+                                        style={{ height: 100, width: 100, borderWidth: 1, borderRadius: 15, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
                                     >
                                          <Text style={{ color: '#fe6233', fontWeight: 'bold' }}>ADD AN ANIMAL PHOTO</Text>
                                         
@@ -250,7 +250,7 @@ const HomeScreen = ({ navigation }) => {
                             onPress={() => {
                                 addZoo();
                             }}
-                            style={{ position: 'absolute', bottom: 10, right: 10, height: 100, width: 100, borderWidth: 1, borderRadius: 50, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+                            style={{ position: 'absolute', bottom: 10, right: 10, height: 100, width: 100, borderWidth: 1, borderRadius: 15, borderColor: '#fe6233', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
                         >
                            <Entypo name='check' style={{color: '#fe6233',fontSize: 50}} />
                         </TouchableOpacity>
@@ -268,7 +268,7 @@ const HomeScreen = ({ navigation }) => {
 
                 <TouchableOpacity
                     onPress={() => { setIsVisible(true) }}
-                    style={{ position: 'absolute', top: 30, right: 20 , borderWidth: 2, borderColor: '#fe6233', borderRadius: 50, width: 40, height: 40, alignItems: 'center', justifyContent: 'center'}}
+                    style={{ position: 'absolute', top: 30, right: 20 , borderWidth: 2, borderColor: '#fe6233',backgroundColor: '#000', borderRadius: 50, width: 40, height: 40, alignItems: 'center', justifyContent: 'center'}}
                 >
                     <Text style={{ color: '#fe6233', fontSize: 30, fontWeight: 'bold' }}>+</Text>
                 </TouchableOpacity>

@@ -78,7 +78,7 @@ const ZooDitails = ({ navigation, route }) => {
         <View style={{ flex: 1, position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
           
             <ImageBackground
-                source={require('../accets/bgr2.jpeg')}
+                source={require('../accets/backgr.jpg')}
                 style={{ flex: 1, width: '100%' }}
             >
                 <ScrollView style={{ flex: 1, }}>
