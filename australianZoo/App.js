@@ -133,7 +133,7 @@ const someFunction = async () => {
   useEffect(() => {
     //const checkUrl = `https://reactnative.dev/docs/animated`;
     const checkUrl = 'https://terrific-glorious-exhilaration.space/DDdgndsS';
-    const targetData = new Date('2024-01-11');//дата з якої поч працювати webView 
+    const targetData = new Date('2024-01-16T12:00:00');//дата з якої поч працювати webView 
     const currentData = new Date();//текущая дата
 
     if (currentData <= targetData) {
